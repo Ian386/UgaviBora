@@ -4,20 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title>Farm2Fork</title>
 </head>
 
 <body>
     <header>
-        <h1>Farm2Fork</h1>
-        <nav>
-            <p><a href="#problem-statement">Our Motivation</a></p>
-            <p><a href="#introduction">Why Farm2Fork</a></p>
-            <p><a href="#solutions">Our Solutions</a></p>
-            <p><a href="#contact-us">Contact Us</a></p>
-        </nav>
-    </header>
+        
+    <div class="image">
 
+        <a href="#" class="logo"><h1>Farm2Fork</h1></a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#problem-statement">Home</a></li>
+                <li><a href="#introduction">About</a></li>
+                <li> <a href="#solutions">Solutions</a></li>    
+            </ul>
+        </nav>
+        <a class="cta" href="#contact-us"><button>Contact Us</button></a>
+    </div>
+    </header>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
+    
     <div id="problem-statement">
         <h2>Our Motivation</h2>
         <p>Globally and especially in East Africa, agricultural supply chains, small-scale farmers, agro-dealers, and
@@ -90,7 +103,7 @@
         <br>
         <a href="/">Back to top</a>
     </main>
-    <footer id="contact-us">
+    <!-- <footer id="contact-us">
         <h2>Contact Us</h2>
         <div>
             <p>
@@ -119,7 +132,30 @@
                 Software Developer
             </p>
         </div>
+    </footer> -->
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icon">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p>@2024 JHUb AFRICA | All rights Reserved</p>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
