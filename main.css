@@ -217,38 +217,46 @@ footer #wave4 {
     }
 }
 
-.contact-us{
+.contact-us {
     background: #fff;
-    width: 580px;
-    border-radius: 16px;
+    width: 100%; 
     padding: 20px;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4)
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+    margin-bottom: 100px;
 }
-h2{
+
+h2 {
     text-align: center;
 }
-hr{
+
+hr {
     width: 100px;
     margin: 10px auto;
 }
 
-.members{
+.members {
     display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    flex-wrap: wrap; 
 }
 
-.team-mem{
-    margin: 8px;
+.team-mem {
+    flex: 0 1 auto; 
+    text-align: center; 
+    margin: 10px; 
+    max-width: 250px; 
 }
-img{
-    width: 100px;
-    height: 100px;
+
+.members img {
+    width: 150px;
+    max-width: 150px; 
+    height: 150px; 
     border-radius: 50%;
-    margin: 10px;
-
 }
 
-h4, p{
+h4, p {
     text-align: center;
-    font-size: 12px;
-    margin:7px;
+    font-size: 12px; 
+    margin: 5px; 
 }
