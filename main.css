@@ -18,60 +18,9 @@ h1 {
     cursor: pointer;
 }
 
-.nav_links {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-}
-
-.nav_links li {
-    position: relative;
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.nav_links li a {
-    position: relative;
-    margin: 0 15px;
-    letter-spacing: 2px;
-    transition: all 0.3s ease 0s;
-}
-
-.nav_links li a:hover {
-    color: rgba(215, 213, 97, 0.8);
-}
-button{
-    font-size: 15px;
-    padding: 9px 25px;
-    background-color: rgb(163, 165, 20);
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-button:hover {
-    background-color: rgba(215, 213, 97, 0.8);
-    text-decoration: underline;
-}
-
-.image {
-    width: 100%;
-    height: 13vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    background-position: center;
-    background-size: cover; 
-    background-image:linear-gradient(to right, transparent,  rgba(27, 70, 27, 0.5), rgba(38, 59, 38, 0.5)),  url('https://images.pexels.com/photos/259280/pexels-photo-259280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-    border-radius: 50px;
-}
-header{
-    position:sticky;
+header {
+    position: sticky;
     top: 0;
-    left: 0; 
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -79,29 +28,73 @@ header{
     z-index: 1000;
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
-    transition: all 0.3s ease 0s;
-    padding: 5px 0;
-    margin-bottom: 20px;
-   
+    padding: 10px 0; /* Increased initial padding for larger height */
+    transition: all 0.3s ease;
+    height:170px;
 }
 
 header.sticky {
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(2px);
-    padding: 5px 100px;
+    padding: 20px 0; /* Reduced padding for the sticky state */
+    background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-
+    height:70px;
 }
 
-header.logo {
-    position: relative;
-    transition: 0.6s;
+.image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0 10%;
+    background-position: center;
+    background-size: cover; 
+    background-image: linear-gradient(to right, transparent, rgba(27, 70, 27, 0.5), rgba(38, 59, 38, 0.5)), url('https://images.pexels.com/photos/259280/pexels-photo-259280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    border-radius: 50px;
 }
 
-header.sticky .logo, header.sticky .nav_links li a {
-    color: black;
+.nav_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
 }
 
+.nav_links li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.nav_links li a {
+    margin: 0 15px;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.nav_links li a:hover {
+    color: rgba(215, 213, 97, 0.8);
+}
+
+button {
+    font-size: 15px;
+    padding: 9px 25px;
+    background-color: rgb(163, 165, 20);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(215, 213, 97, 0.8);
+    text-decoration: underline;
+}
+
+:target{
+    padding-top: 80px;;
+    margin-top: -70px;
+}
+
+/* Footer styles */
 footer {
     position: relative;
     width: 100%;
@@ -217,6 +210,7 @@ footer #wave4 {
     }
 }
 
+/* Styles for the contact-us section */
 .contact-us {
     background: #fff;
     width: 100%; 
