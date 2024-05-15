@@ -28,16 +28,15 @@ header {
     z-index: 1000;
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
-    padding: 10px 0; /* Increased initial padding for larger height */
+    padding: 10px 0; 
     transition: all 0.3s ease;
-    height:170px;
 }
 
 header.sticky {
-    padding: 20px 0; /* Reduced padding for the sticky state */
+    padding: 20px 0;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    height:70px;
+    backdrop-filter: blur(10px);
 }
 
 .image {
@@ -90,7 +89,7 @@ button:hover {
 }
 
 :target{
-    padding-top: 80px;;
+    padding-top: 90px;;
     margin-top: -70px;
 }
 
@@ -210,7 +209,7 @@ footer #wave4 {
     }
 }
 
-/* Styles for the contact-us section */
+
 .contact-us {
     background: #fff;
     width: 100%; 
