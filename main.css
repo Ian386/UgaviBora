@@ -29,6 +29,7 @@ header {
     z-index: 1000;
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
+
     padding: 0px 0; /* Increased initial padding for larger height */
     transition: all 0.3s ease; 
     border-radius: 50px;
@@ -42,6 +43,7 @@ header.sticky {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     height:60px;
     
+
 }
 
 .image {
@@ -98,6 +100,7 @@ button:hover {
 :target{
     padding-top: 80px;;
     margin-top: -65px;
+
 }
 
 /* Footer styles */
@@ -217,7 +220,7 @@ footer #wave4 {
     }
 }
 
-/* Styles for the contact-us section */
+
 .contact-us {
     background: #fff;
     width: 100%; 
