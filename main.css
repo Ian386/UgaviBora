@@ -264,8 +264,16 @@ hr {
     border-radius: 50%;
 }
 
-h4, p {
+.team-mem h4, p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
     text-align: center;
     font-size: 12px; 
     margin: 5px; 
+}
+
+.team-mem p:hover{
+    cursor: pointer;
+    color: #308836;
+    text-decoration: underline;
 }
