@@ -286,19 +286,21 @@ p {
 }
 
 .wrapper {
-    margin: 150px auto;
+    margin: 25px auto 75px;
     width: 90%;
-    border: 3px solid #039903; 
+    border: 3px solid #039903; /* Green border */
     padding: 10px;
     border-radius: 10px;
-    overflow: hidden; 
+    overflow: hidden; /* Clear floats */
 }
 
 h3 {
     text-align: center;
     font-size: 25px;
     color: #039903;
-    margin: 10px 0;
+    margin: 10px 0; /* Adjust this to align within the border if necessary */
+    padding: 0 10px; /* Ensure padding aligns with the wrapper's content */
+    font-family: "Poppins", sans-serif;
 }
 
 .text1 p, .text3 p {
@@ -307,7 +309,8 @@ h3 {
     margin-right: 10px;
     font-size: 18px;
     color: #333;
-    text-align: justify; 
+    text-align: justify; /* Justify text */
+    font-family: 'Montserrat', sans-serif; /* Ensure consistency in font */
 }
 
 .text2 p, .text4 p {
@@ -316,11 +319,13 @@ h3 {
     margin-left: 10px;
     font-size: 18px;
     color: #333;
-    text-align: justify; 
+    text-align: justify; /* Justify text */
+    font-family: 'Montserrat', sans-serif; /* Ensure consistency in font */
 }
 
-.text2 p strong{
+.text2 p strong, .text4 p strong , .text1 p strong, .text3 p strong{
     text-align: center;
+    display: block; /* Make strong tags block-level to enable centering */
 }
 
 .image1, .image3 {
@@ -328,6 +333,7 @@ h3 {
     max-width: 320px;
     border: 3px solid #fff;
     border-radius: 10px;
+    margin-top: 10px; /* Adjust for visual alignment */
 }
 
 .image2, .image4 {
@@ -335,6 +341,7 @@ h3 {
     max-width: 320px;
     border: 3px solid #fff;
     border-radius: 10px;
+    margin-top: 10px; /* Adjust for visual alignment */
 }
 
 body {
@@ -347,3 +354,4 @@ body {
     margin: 0;
     padding: 0;
 }
+
