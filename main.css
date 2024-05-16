@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -6,15 +7,17 @@
     padding: 0;
 }
 
-li, a, button {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+.nav_links li, a, button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 350;
     font-size: 20px;
     color: black;
     text-decoration: none;
 }
 
 h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 250;
     cursor: pointer;
 }
 
@@ -22,33 +25,42 @@ header {
     position: sticky;
     top: 0;
     width: 100%;
+    height: 11vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
     z-index: 1000;
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
-    padding: 10px 0; 
-    transition: all 0.3s ease;
+
+    padding: 0px 0; /* Increased initial padding for larger height */
+    transition: all 0.3s ease; 
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    
 }
 
 header.sticky {
-    padding: 20px 0;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
+    height:60px;
+    
+
 }
 
 .image {
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-grow: 1;
-    padding: 0 10%;
+    padding: 0 10%; 
     background-position: center;
     background-size: cover; 
     background-image: linear-gradient(to right, transparent, rgba(27, 70, 27, 0.5), rgba(38, 59, 38, 0.5)), url('https://images.pexels.com/photos/259280/pexels-photo-259280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     border-radius: 50px;
+    
 }
 
 .nav_links {
@@ -75,6 +87,8 @@ header.sticky {
 }
 
 button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
     font-size: 15px;
     padding: 9px 25px;
     background-color: rgb(163, 165, 20);
@@ -89,8 +103,9 @@ button:hover {
 }
 
 :target{
-    padding-top: 90px;;
-    margin-top: -70px;
+    padding-top: 80px;;
+    margin-top: -65px;
+
 }
 
 /* Footer styles */
@@ -143,6 +158,7 @@ footer .menu li a {
 
 footer .menu li a:hover {
     opacity: 1;
+    color: #308836;
 }
 
 footer p {
@@ -248,8 +264,16 @@ hr {
     border-radius: 50%;
 }
 
-h4, p {
+.team-mem h4, p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
     text-align: center;
     font-size: 12px; 
     margin: 5px; 
+}
+
+.team-mem p:hover{
+    cursor: pointer;
+    color: #308836;
+    text-decoration: underline;
 }
