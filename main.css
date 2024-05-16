@@ -7,6 +7,139 @@
     box-sizing: border-box;
 }
 
+/* utility classes */
+.animate{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.animate--delay-1s{
+    animation-delay: 1s;
+}
+.animate--fast{
+    animation-duration: 1s;
+}
+
+.animate--slow{
+    animation-duration: 1.5s;
+
+}
+
+.slideInLeft{
+    animation-name: slideInLeft;
+    animation-timing-function: ease-in;
+}
+
+
+/* Animations */
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* @keyframes bounce{
+    0%, 20%, 50%, 80%, 100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    40%{
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+    60%{
+        transform: translateY(-15px);
+        opacity: 1;
+    }
+    
+}
+
+.bounce{
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count:ease-in;
+} */
+
+
+.problem-statement{
+    margin: 25px auto 50px; 
+    text-align: justify;
+    width: 60%;
+    font-size: 40px;
+    color:antiquewhite;   
+}
+
+
+ .problem-statement p{
+    margin-top:15px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 20px;
+} 
+
+.motiveImage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0 10%;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to right, transparent, rgba(27, 70, 27, 0.5), rgba(38, 59, 38, 0.5)), url(images/pexels-tomfisk-1483880.jpg);
+    border-radius: 50px;
+}
+
+
+.introImage{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items:center;
+    flex-grow: 1;
+    padding: 0 10%;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to right, transparent, rgba(27, 70, 27, 0.5), rgba(38, 59, 38, 0.5)), url(images//pexels-nishantaneja-3019836.jpg);
+    border-radius: 50px;
+}
+
+.introduction h2{
+    font-family: 'Poppins', sans-serif;
+    margin: 20px auto 20px; 
+    width: 60%;
+    color:antiquewhite;
+    font-weight: 800;
+}
+.introduction {
+    margin-bottom: 20px; 
+    width: 60%;
+    color:antiquewhite;
+}
+
+.introduction p{
+    font-family: 'Poppins', sans-serif;
+    margin-top:15px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
 .nav_links li,
 a,
 button {
@@ -39,7 +172,6 @@ header {
     transition: all 0.3s ease;
     border-radius: 50px;
     margin-top: 5px;
-    margin-bottom: 20px;
 
 }
 
@@ -348,32 +480,5 @@ h3 {
 
 
 
-.problem-statement{
-    margin: 25px auto 75px;
-    text-align: justify;
-    width: 60%;
-    font-size: 40px;
-    color: #333;    
-}
 
-.problem-statement p{
-    margin-top:15px;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 25px;
-    text-align: justify;
-}
 
-.introduction{
-    margin: 25px auto 75px;
-    width: 60%;
-    color: #333;
-}
-
-.introduction p{
-    margin-top:15px;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 25px;
-    text-align: justify;
-}
