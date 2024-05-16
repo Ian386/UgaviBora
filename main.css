@@ -35,7 +35,6 @@ header {
     backdrop-filter: blur(10px);
 
     padding: 0px 0;
-    /* Increased initial padding for larger height */
     transition: all 0.3s ease;
     border-radius: 50px;
     margin-top: 5px;
@@ -348,4 +347,3 @@ body {
     margin: 0;
     padding: 0;
 }
-
