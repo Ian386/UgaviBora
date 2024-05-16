@@ -2,12 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.nav_links li, a, button {
+.nav_links li,
+a,
+button {
     font-family: "Poppins", sans-serif;
     font-weight: 350;
     font-size: 20px;
@@ -27,25 +28,26 @@ header {
     width: 100%;
     height: 11vh;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     z-index: 1000;
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
 
-    padding: 0px 0; /* Increased initial padding for larger height */
-    transition: all 0.3s ease; 
+    padding: 0px 0;
+    /* Increased initial padding for larger height */
+    transition: all 0.3s ease;
     border-radius: 50px;
     margin-top: 5px;
     margin-bottom: 20px;
-    
+
 }
 
 header.sticky {
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    height:60px;
-    
+    height: 60px;
+
 
 }
 
@@ -55,12 +57,12 @@ header.sticky {
     justify-content: space-between;
     align-items: center;
     flex-grow: 1;
-    padding: 0 10%; 
+    padding: 0 10%;
     background-position: center;
-    background-size: cover; 
+    background-size: cover;
     background-image: linear-gradient(to right, transparent, rgba(27, 70, 27, 0.5), rgba(38, 59, 38, 0.5)), url('https://images.pexels.com/photos/259280/pexels-photo-259280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     border-radius: 50px;
-    
+
 }
 
 .nav_links {
@@ -102,13 +104,13 @@ button:hover {
     text-decoration: underline;
 }
 
-:target{
-    padding-top: 80px;;
+:target {
+    padding-top: 80px;
+    ;
     margin-top: -65px;
 
 }
 
-/* Footer styles */
 footer {
     position: relative;
     width: 100%;
@@ -121,7 +123,8 @@ footer {
     flex-direction: column;
 }
 
-footer .social_icon, footer .menu {
+footer .social_icon,
+footer .menu {
     position: relative;
     display: flex;
     justify-content: center;
@@ -130,11 +133,13 @@ footer .social_icon, footer .menu {
     flex-wrap: nowrap;
 }
 
-footer .social_icon li, footer .menu li {
+footer .social_icon li,
+footer .menu li {
     list-style: none;
 }
 
-footer .social_icon li a, footer .social_icon li p {
+footer .social_icon li a,
+footer .social_icon li p {
     font-size: 2em;
     color: #fff;
     margin: 0 10px;
@@ -211,6 +216,7 @@ footer #wave4 {
     0% {
         background-position-x: 1000px;
     }
+
     100% {
         background-position-x: 0px;
     }
@@ -220,6 +226,7 @@ footer #wave4 {
     0% {
         background-position-x: 0px;
     }
+
     100% {
         background-position-x: 1000px;
     }
@@ -228,7 +235,7 @@ footer #wave4 {
 
 .contact-us {
     background: #fff;
-    width: 100%; 
+    width: 100%;
     padding: 20px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
     margin-bottom: 100px;
@@ -245,35 +252,100 @@ hr {
 
 .members {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .team-mem {
-    flex: 0 1 auto; 
-    text-align: center; 
-    margin: 10px; 
-    max-width: 250px; 
+    flex: 0 1 auto;
+    text-align: center;
+    margin: 10px;
+    max-width: 250px;
 }
 
 .members img {
     width: 150px;
-    max-width: 150px; 
-    height: 150px; 
+    max-width: 150px;
+    height: 150px;
     border-radius: 50%;
 }
 
-.team-mem h4, p{
+.team-mem h4,
+p {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     text-align: center;
-    font-size: 12px; 
-    margin: 5px; 
+    font-size: 12px;
+    margin: 5px;
 }
 
-.team-mem p:hover{
+.team-mem p:hover {
     cursor: pointer;
     color: #308836;
     text-decoration: underline;
 }
+
+.wrapper {
+    margin: 150px auto;
+    width: 90%;
+    border: 3px solid #039903; 
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+    color: #039903;
+    margin: 10px 0;
+}
+
+.text1 p, .text3 p {
+    float: left;
+    width: 60%;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #333;
+    text-align: justify; 
+}
+
+.text2 p, .text4 p {
+    float: right;
+    width: 60%;
+    margin-left: 10px;
+    font-size: 18px;
+    color: #333;
+    text-align: justify; 
+}
+
+.text2 p strong{
+    text-align: center;
+}
+
+.image1, .image3 {
+    float: right;
+    max-width: 320px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
+.image2, .image4 {
+    float: left;
+    max-width: 320px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
