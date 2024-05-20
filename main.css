@@ -45,27 +45,30 @@
 
 
 
-.problem-statement{
-    margin: 25px auto 50px; 
+.problem-statement {
+    margin: 2vw auto; /* Responsive vertical margins */
     text-align: justify;
-    width: 100%;
-    font-size: 40px;
-    color:antiquewhite;   
+    width: 90%; /* Slightly reduce width for padding space */
+    font-size: 3vw; /* Responsive font size based on viewport width */
+    color: antiquewhite;
     height: 70vh;
+    overflow: hidden; /* Hide any overflow to prevent breaking the layout */
+    padding: 1vw; /* Add some padding to avoid text touching the edges */
 }
 
-
- .problem-statement p{
+.problem-statement p {
     position: relative;
-    margin-top:15px;
-    font-size: 25px;
+    margin-top: 1vh; /* Responsive margin top */
+    font-size: 1.5vw; /* Responsive font size */
     font-family: 'Poppins', sans-serif;
-    line-height: 35px;
-} 
+    line-height: 5.5vh; /* Responsive line height */
+    overflow: auto; /* Allow scrolling if text exceeds the container height */
+    padding: 1vh 1vw; /* Consistent padding to maintain layout */
+}
 
-.motiveImage{
+.motiveImage {
     width: 100%;
-    height: 100%;
+    height: 83vh; /* Auto height for better flexibility */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,7 +77,7 @@
     background-position: center;
     background-size: cover;
     background-image: linear-gradient(to right, transparent, rgba(27, 70, 27, 0.5), rgba(38, 59, 38, 0.5)), url(images/pexels-tomfisk-1483880.jpg);
-    border-radius: 50px;
+    border-radius: 2vw; /* Responsive border radius */
 }
 
 
@@ -116,8 +119,7 @@
 }
 
 .nav_links li,
-a,
-button {
+a {
     font-family: "Poppins", sans-serif;
     font-weight: 430;
     font-size: 20px;
@@ -127,7 +129,7 @@ button {
 
 h1 {
     font-family: "Poppins", sans-serif;
-    font-weight: 280;
+    font-weight: 700;
     cursor: pointer;
     font-size: 3vw; /* Use viewport width to scale font size dynamically */
     min-width: 160px; /* Ensure minimum width for small screens */
@@ -197,7 +199,8 @@ header {
     color: aliceblue;
     background-color: rgb(38, 167, 59);
     border-radius: 20px;
-    padding: 5px 10px; 
+    padding: 5px 10px;
+    transition: color 0.3s ease-in-out;
 }
 
 
