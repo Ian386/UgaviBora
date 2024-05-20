@@ -44,80 +44,47 @@
 
 
 
+.home-image{
+    height:100vh;
+    width:100%;
+}
 
-.problem-statement {
-    margin: 2vw auto; /* Responsive vertical margins */
+.home-image img{
+    height:100%;
+    width:100%
+}
+
+.problem-statement, .introduction {
+    margin: 0 auto; 
     text-align: justify;
-    width: 90%; /* Slightly reduce width for padding space */
-    font-size: 3vw; /* Responsive font size based on viewport width */
-    color: antiquewhite;
-    height: 70vh;
+    width: 90%;
+    color: rgb(0, 0, 0);
     overflow: hidden; /* Hide any overflow to prevent breaking the layout */
-    padding: 1vw; /* Add some padding to avoid text touching the edges */
-}
-
-.problem-statement p {
-    position: relative;
-    margin-top: 1vh; /* Responsive margin top */
-    font-size: 1.5vw; /* Responsive font size */
-    font-family: 'Poppins', sans-serif;
-    line-height: 5.5vh; /* Responsive line height */
-    overflow: auto; /* Allow scrolling if text exceeds the container height */
-    padding: 1vh 1vw; /* Consistent padding to maintain layout */
-}
-
-.motiveImage {
-    width: 100%;
-    height: 83vh; /* Auto height for better flexibility */
-    display: flex;
+    padding: 1vw;
     justify-content: space-between;
     align-items: center;
-    flex-grow: 1;
     padding: 0 10%;
-    background-position: center;
-    background-size: cover;
-    background-image: linear-gradient(to right, transparent, rgba(27, 70, 27, 0.5), rgba(38, 59, 38, 0.5)), url(images/pexels-tomfisk-1483880.jpg);
-    border-radius: 2vw; /* Responsive border radius */
 }
 
-
-.introImage{
-    margin-top: 20px;
-    margin-bottom: 30px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between; 
-    align-items:center;
-    flex-grow: 1;
-    padding: 0 10%;
-    background-position: center;
-    background-size: cover;
-    background-image: linear-gradient(to right, transparent, rgba(27, 70, 27, 0.5), rgba(38, 59, 38, 0.5)), url(images//pexels-nishantaneja-3019836.jpg);
-    border-radius: 50px;
-}
-
-.introduction h2{
+.problem-statement p, .introduction p {
+    position: relative;
+    margin-top: 1vh; /* Responsive margin top */
+    font-size: 2.3vh; /* Responsive font size */
     font-family: 'Poppins', sans-serif;
+    line-height: 5vh; /* Responsive line height */
+    overflow: auto; 
+    padding: 1vh 1vw; 
+}
+
+
+.introduction h2, .carousel h2, .contact-us h2, .solutions, .problem-statement h2{
     margin: 20px auto 20px; 
     width: 60%;
-    color:antiquewhite;
+    color:rgb(0, 0, 0);
     font-weight: 800;
+    text-align: center;
+    font-size: 7vh;
 }
-.introduction {
-    margin-bottom: 20px; 
-    width: 60%;
-    color:antiquewhite;
-}
-
-.introduction p{
-    font-family: 'Poppins', sans-serif;
-    margin-top:15px;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: justify;
-}
-
 .nav_links li,
 a {
     font-family: "Poppins", sans-serif;
@@ -136,7 +103,7 @@ h1 {
 }
 
 header {
-    position: relative;
+    position: absolute;
     top: 0;
     width: 100%; /* Ensures the header is always full width */
     height: 11vh; /* Adjusts height based on the viewport height */
@@ -144,8 +111,6 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 3000;
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
     padding: 1vh 2vw; /* Use viewport units for responsive padding */
     transition: all 0.3s ease;
     border-radius: 2vw; /* Viewport width unit for responsive border-radius */
@@ -172,6 +137,7 @@ header {
     align-items: center;
     list-style: none;
     flex-grow: 1; /* Allow navigation to take remaining space */
+
 }
 
 .nav_links li {
@@ -191,13 +157,13 @@ header {
     font-family: "Poppins", sans-serif;
     font-weight: 430;
     font-size: 1.2vw; /* Responsive font size */
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
 .nav_links li a:hover {
-    color: aliceblue;
-    background-color: rgb(38, 167, 59);
+    color: rgb(32, 135, 1);
+    /* background-color: rgb(38, 167, 59); */
     border-radius: 20px;
     padding: 5px 10px;
     transition: color 0.3s ease-in-out;
@@ -213,10 +179,10 @@ header {
 
 .carousel {
     position: relative;
-    width: 100%;
-    height: 100vh;
+    width: 90%;
+    height: 90vh;
     overflow: hidden;
-    
+    margin: 1vh auto;
 }
 
 .carousel .list .item {
@@ -228,21 +194,21 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: blur(7px);
+    filter: brightness(50%);
 }
 
 .carousel .list .item .content {
     position: absolute;
-    top: 20%;
+    top: 8%;
     max-width: 80%;
-    left: 45%;
+    left: 40%;
     transform: translate(-50%);
     padding-right: 30%;
     box-sizing: border-box;
     color: white;
     text-shadow: 0 5px 10px #0004;
     font-family: "Poppins", sans-serif;
-    font-size: 15px;
+    font-size: 3vh;
 }
 
 .carousel .list .item .content .heading {
@@ -254,7 +220,7 @@ header {
 .thumbnail {
     position: absolute;
     bottom: 50px;
-    left: 45%;
+    left: 50%;
     width: max-content;
     z-index: 100;
     display: flex;
@@ -274,7 +240,7 @@ header {
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
-    filter: blur(1px);
+    /* filter: brightness(50%); */
 }
 
 .thumbnail .item .content {
@@ -290,8 +256,8 @@ header {
 
 .arrows {
     position: absolute;
-    top: 80%;
-    right: 52%;
+    top: 87%;
+    right: 56%;
     width: 300px;
     max-width: 30%;
     display: flex;
@@ -302,10 +268,10 @@ header {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: grey;
+    background-color: rgb(255, 255, 255);
     border: none;
     font-family: monospace;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: large;
     transition: .5s;
@@ -313,7 +279,7 @@ header {
 }
 
 .arrows button:hover {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     color: #555;
 }
 
@@ -435,7 +401,7 @@ header {
 .time {
     width: 0%;
     height: 5px;
-    background-color: forestgreen;
+    background-color: rgb(0, 0, 0);
     position: absolute;
     z-index: 100;
     top: 0;
@@ -472,14 +438,12 @@ header {
     margin-bottom: 100px;
 }
 
-h2 {
-    text-align: center;
-    font-size: 50px;
-}
 
 hr {
-    width: 100px;
+    width: 130px;
     margin: 10px auto;
+    height: 3px;
+    background-color: #000000;
 }
 
 .members {
@@ -638,12 +602,3 @@ footer #wave4 {
         background-position-x: 1000px;
     }
 }
-
-
-
-
-
-
-
-
-
