@@ -208,7 +208,7 @@ header {
     color: white;
     text-shadow: 0 5px 10px #0004;
     font-family: "Poppins", sans-serif;
-    font-size: 3vh;
+    font-size: 2.9vh;
 }
 
 .carousel .list .item .content .heading {
@@ -280,7 +280,7 @@ header {
 
 .arrows button:hover {
     background-color: rgb(0, 0, 0);
-    color: #555;
+    color: #fff;
 }
 
 .carousel .list .item:nth-child(1) {
@@ -396,28 +396,6 @@ header {
 .carousel.next .arrows button,
 .carousel.prev .arrows button {
     pointer-events: none;
-}
-
-.time {
-    width: 0%;
-    height: 5px;
-    background-color: rgb(0, 0, 0);
-    position: absolute;
-    z-index: 100;
-    top: 0;
-    left: 0;
-}
-
-.carousel.next .time,
-.carousel.prev .time {
-    width: 100%;
-    animation: timeRunning 2s linear 1 forwards;
-}
-
-@keyframes timeRunning {
-    to {
-        width: 0;
-    }
 }
 
 @media screen and (max-width:678px) {
