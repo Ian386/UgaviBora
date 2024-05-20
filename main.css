@@ -43,6 +43,7 @@
 }
 
 
+
 .home-image{
     height:100vh;
     width:100%;
@@ -52,39 +53,6 @@
     height:100%;
     width:100%
 }
-
-/* .motiveImage {
-    width: 100%;
-    height: 83vh; Auto height for better flexibility
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-grow: 1;
-    padding: 0 10%;
-    background-position: center;
-    background-size: cover;
-    background-image: linear-gradient(to right, transparent, rgba(27, 70, 27, 0.5), rgba(38, 59, 38, 0.5)), url(images/pexels-tomfisk-1483880.jpg);
-    border-radius: 2vw; Responsive border radius
-} */
-
-
-/* .introImage{
-    margin-top: 10px;
-    margin-bottom: 50px;
-    margin-left: 170px;
-    width: 80%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between; 
-    align-items:center;
-    flex-grow: 1;
-    padding: 0 10%;
-    background-position: center;
-    background-size: cover;
-    background-image: linear-gradient(to right, transparent, rgba(27, 70, 27, 0.5), rgba(38, 59, 38, 0.5)), url(images//pexels-nishantaneja-3019836.jpg);
-    border-radius: 50px;
-    
-} */
 
 .problem-statement, .introduction {
     margin: 0 auto; 
@@ -110,7 +78,6 @@
 
 
 .introduction h2, .carousel h2, .contact-us h2, .solutions, .problem-statement h2{
-    /* font-family: 'Poppins', sans-serif; */
     margin: 20px auto 20px; 
     width: 60%;
     color:rgb(0, 0, 0);
@@ -144,8 +111,6 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 3000;
-    /* background-color: rgba(255, 255, 255, 0.8); */
-    /* backdrop-filter: blur(10px); */
     padding: 1vh 2vw; /* Use viewport units for responsive padding */
     transition: all 0.3s ease;
     border-radius: 2vw; /* Viewport width unit for responsive border-radius */
@@ -162,8 +127,6 @@ header {
     padding-right: 2%;
     background-position: center;
     background-size: cover;
-    /* background-color: #308836;
-    border-radius: 50px; */
 } 
 
 .nav_links {
