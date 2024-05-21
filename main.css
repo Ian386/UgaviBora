@@ -446,12 +446,12 @@ hr {
 }
 
 .team-mem h4,
-p {
+p, a {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     text-align: center;
     font-size: 12px;
-    margin: 5px;
+    color: #000000;
 }
 
 .team-mem p:hover {
