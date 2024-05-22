@@ -446,7 +446,7 @@ hr {
 }
 
 .team-mem h4,
-p, a {
+.team-mem p, .team-mem a {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     text-align: center;
