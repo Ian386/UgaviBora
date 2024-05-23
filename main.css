@@ -8,35 +8,37 @@
 }
 
 /* utility classes */
-.animate{
+.animate {
     animation-duration: 1s;
     animation-fill-mode: both;
 }
-.animate--delay-1s{
+
+.animate--delay-1s {
     animation-delay: 1s;
 }
-.animate--fast{
+
+.animate--fast {
     animation-duration: 1s;
 }
 
-.animate--slow{
+.animate--slow {
     animation-duration: 1.5s;
 
 }
 
-.slideInLeft{
+.slideInLeft {
     animation-name: slideInLeft;
     animation-timing-function: ease-in;
 }
 
 
-/* Animations */
-@keyframes slideInLeft{
-    from{
+@keyframes slideInLeft {
+    from {
         transform: translateX(-300px);
         opacity: 0;
     }
-    to{
+
+    to {
         transform: translateX(0);
         opacity: 1;
     }
@@ -44,47 +46,58 @@
 
 
 
-.home-image{
-    height:100vh;
-    width:100%;
+.home-image {
+    height: 100vh;
+    width: 100%;
 }
 
-.home-image img{
-    height:100%;
-    width:100%
+.home-image img {
+    height: 100%;
+    width: 100%
 }
 
-.problem-statement, .introduction {
-    margin: 0 auto; 
+.problem-statement,
+.introduction {
+    margin: 0 auto;
     text-align: justify;
     width: 90%;
     color: rgb(0, 0, 0);
-    overflow: hidden; /* Hide any overflow to prevent breaking the layout */
+    overflow: hidden;
+    /* Hide any overflow to prevent breaking the layout */
     padding: 1vw;
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;
 }
 
-.problem-statement p, .introduction p {
+.problem-statement p,
+.introduction p {
     position: relative;
-    margin-top: 1vh; /* Responsive margin top */
-    font-size: 2.3vh; /* Responsive font size */
+    margin-top: 1vh;
+    /* Responsive margin top */
+    font-size: 2.3vh;
+    /* Responsive font size */
     font-family: 'Poppins', sans-serif;
-    line-height: 5vh; /* Responsive line height */
-    overflow: auto; 
-    padding: 1vh 1vw; 
+    line-height: 5vh;
+    /* Responsive line height */
+    overflow: auto;
+    padding: 1vh 1vw;
 }
 
 
-.introduction h2, .carousel h2, .contact-us h2, .solutions, .problem-statement h2{
-    margin: 20px auto 20px; 
+.introduction h2,
+.carousel h2,
+.contact-us h2,
+.solutions,
+.problem-statement h2 {
+    margin: 20px auto 20px;
     width: 60%;
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     font-weight: 800;
     text-align: center;
     font-size: 7vh;
 }
+
 .nav_links li,
 a {
     font-family: "Poppins", sans-serif;
@@ -98,23 +111,30 @@ h1 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     cursor: pointer;
-    font-size: 3vw; /* Use viewport width to scale font size dynamically */
-    min-width: 160px; /* Ensure minimum width for small screens */
+    font-size: 3vw;
+    /* Use viewport width to scale font size dynamically */
+    min-width: 160px;
+    /* Ensure minimum width for small screens */
 }
 
 header {
     position: absolute;
     top: 0;
-    width: 100%; /* Ensures the header is always full width */
-    height: 11vh; /* Adjusts height based on the viewport height */
+    width: 100%;
+    /* Ensures the header is always full width */
+    height: 11vh;
+    /* Adjusts height based on the viewport height */
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 3000;
-    padding: 1vh 2vw; /* Use viewport units for responsive padding */
+    padding: 1vh 2vw;
+    /* Use viewport units for responsive padding */
     transition: all 0.3s ease;
-    border-radius: 2vw; /* Viewport width unit for responsive border-radius */
-    margin-top: 0.5vh; /* Small margin-top for better spacing, also viewport relative */
+    border-radius: 2vw;
+    /* Viewport width unit for responsive border-radius */
+    margin-top: 0.5vh;
+    /* Small margin-top for better spacing, also viewport relative */
 }
 
 .image {
@@ -123,40 +143,52 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-grow: 1;
-    padding-left: 2%; /* Reduced padding for better space management */
+    padding-left: 2%;
+    /* Reduced padding for better space management */
     padding-right: 2%;
     background-position: center;
     background-size: cover;
-} 
+}
 
 .nav_links {
-    padding: 0; /* Remove default padding to control spacing */
-    margin: 0; /* Reset margin to ensure consistent spacing */
+    padding: 0;
+    /* Remove default padding to control spacing */
+    margin: 0;
+    /* Reset margin to ensure consistent spacing */
     display: flex;
-    justify-content: space-between; /* Distribute items evenly */
+    justify-content: space-between;
+    /* Distribute items evenly */
     align-items: center;
     list-style: none;
-    flex-grow: 1; /* Allow navigation to take remaining space */
+    flex-grow: 1;
+    /* Allow navigation to take remaining space */
 
 }
 
 .nav_links li {
     display: inline-block;
-    padding: 0 1vw; /* Use viewport width for dynamic spacing */
+    padding: 0 1vw;
+    /* Use viewport width for dynamic spacing */
 }
 
 .nav_links li a {
-    margin: 0 10px; /* Ensure consistent margins */
-    letter-spacing: 1px; /* Reduce letter spacing for smaller widths */
+    margin: 0 10px;
+    /* Ensure consistent margins */
+    letter-spacing: 1px;
+    /* Reduce letter spacing for smaller widths */
     transition: all 0.3s ease;
     white-space: nowrap;
-    font-size: 1.2vw; /* Use viewport width for dynamic font sizing */
+    font-size: 1.2vw;
+    /* Use viewport width for dynamic font sizing */
 }
 
-.nav_links li, a, button {
+.nav_links li,
+a,
+button {
     font-family: "Poppins", sans-serif;
     font-weight: 430;
-    font-size: 1.2vw; /* Responsive font size */
+    font-size: 1.2vw;
+    /* Responsive font size */
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
@@ -304,7 +336,7 @@ header {
 }
 
 .carousel .list .item:nth-child(1) .heading {
-    animation-delay: 1.4s !important;
+    animation-delay: 1s !important;
 }
 
 .carousel.next .list .item:nth-child(1) img {
@@ -399,12 +431,35 @@ header {
 }
 
 @media screen and (max-width:678px) {
+
+    .home-image{
+        width:100%;
+        height:40vh;
+    }
+    .problem-statement p,
+.introduction p {
+    font-size: 1.9vh;
+}
+
+    .introduction h2,
+    .carousel h2,
+    .contact-us h2,
+    .solutions,
+    .problem-statement h2 {
+        font-size: 3.5vh;
+    }
+    
     .carousel .list .item .content {
         padding-right: 0;
+        font-size: 2.3vh;
     }
 
     .carousel .list .item .content .title {
         font-size: 30px;
+    }
+
+    .thumbnail {
+        display: none;
     }
 }
 
@@ -446,7 +501,8 @@ hr {
 }
 
 .team-mem h4,
-.team-mem p, .team-mem a {
+.team-mem p,
+.team-mem a {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     text-align: center;
