@@ -252,7 +252,7 @@ button {
 .thumbnail {
     position: absolute;
     bottom: 50px;
-    left: 50%;
+    left: 45%;
     width: max-content;
     z-index: 100;
     display: flex;
@@ -261,8 +261,8 @@ button {
 }
 
 .thumbnail .item {
-    width: 150px;
-    height: 220px;
+    width: 130px;
+    height: 200px;
     flex-shrink: 0;
     position: relative;
 }
@@ -437,7 +437,7 @@ button {
         height:40vh;
     }
     .problem-statement p,
-.introduction p {
+.introduction p ,.problem-statement button,.introduction button{
     font-size: 1.9vh;
 }
 
@@ -451,7 +451,7 @@ button {
     
     .carousel .list .item .content {
         padding-right: 0;
-        font-size: 2.3vh;
+        font-size: 2.2vh;
     }
 
     .carousel .list .item .content .title {
@@ -635,4 +635,49 @@ footer #wave4 {
     100% {
         background-position-x: 1000px;
     }
+}
+/* @media(max-width:680px){
+    .myBtn.myBtn2{
+        width: 100%
+        
+    }
+} */
+#more {display: none;}
+.myBtn{
+    color: #0b5e10;
+    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 780;
+    border-color: #fff;
+    border-width: 0px;
+    margin-left: 12px;
+}
+.myBtn:hover{
+    background-color: #0b5e10;
+    color: #fff;
+    transition: color 0.65s ease-in-out;
+    padding-left: 7px;
+    padding-right: 6px;
+    padding-bottom: 3px;
+    border-radius: 4.5px;
+}
+
+#more2{display: none;}
+.myBtn2{
+    color: #0b5e10;
+    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 780;
+    border-color: #fff;
+    border-width: 0px;
+    margin-left: 12px;
+}
+.myBtn2:hover{
+    background-color: #0b5e10;
+    color: #fff;
+    transition: color 0.65s ease-in-out;
+    padding-left: 7px;
+    padding-right: 6px;
+    padding-bottom: 3px;
+    border-radius: 4.5px;
 }
